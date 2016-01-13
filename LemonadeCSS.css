@@ -1,4 +1,52 @@
-p{
+p
+{
     color:#0d0d0d ;
     font-size: 30px;
+}
+
+.header
+{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    color:#CCC;
+    padding:50px;
+    height: 20px;
+    text-align: center;
+    color: black;
+    font-size: 70px;
+    text-shadow: 2px 2px white;
+}
+
+.center {text-align:center;}
+
+#background {
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+table
+{
+	background-color: lightgreen;
+	width:70%;
+	font-size:20px;
+
+}
+
+#table1
+{
+	background-color:lightgreen;
+	width:70%;
+}
+
+td 
+{
+	width:50%;
+}
+#td1
+{
+	width:25%;
 }

@@ -1,8 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>LemonadeStand</title>
+		<link rel="stylesheet" type="text/css" href="LemonadeCSS.css"> 
 </head>
-<body>
+<body id="background" background="lemonadeStand.jpg">
+	<h1 class="header">Lemonade Stand</h1>
+	<table border=3 align="center" >
+		<tr>
+			<td>Item</td>
+			<td>Number you have left in stock</td>
+		</tr>
+			<tr>
+			<td>Lemons</td>
+			<td id='lemonsInStock'>0</td>
+		</tr>
+		<tr>
+			<td>Sugar</td>
+			<td id='sugarInStock'>0</td>
+		</tr>
+		<tr>
+			<td>Ice</td>
+			<td id='iceInStock'>0</td>
+		</tr>
+		<tr>
+			<td>cups</td>
+			<td id='cupsInStock'>0</td>
+		</tr>
+	</table> 
+	<table id="table1"  border=3 align="center">
+		<tr>
+			<td id="td1"><input type="button" value="Buy Lemons" onclick="buyLemons()" /></td>
+			<td id="td1"><input type="button" value="Buy Sugar" onclick="buySugar()" /></td>
+			<td id="td1"><input type="button" value="Buy Ice" onclick="buyIce()" /></td>
+			<td id="td1"><input type="button" value="Buy Cups" onclick="buyCups()" /></td>
+		</tr>
+	</table>
+	<table border=3 align="center">
+		<tr>
+			<td>money you have left to spend</td>
+			<td id='money'></td>
+		</tr>
+	</tabe>
+
+
 	<script src="Lemonadejs.js"></script>
 </body>
 </html>
