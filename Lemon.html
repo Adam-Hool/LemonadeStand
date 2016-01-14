@@ -8,23 +8,23 @@
 	<h1 class="header">Lemonade Stand</h1>
 	<table border=3 align="center" >
 		<tr>
-			<td>Item</td>
+			<td>Item and price</td>
 			<td>Number you have left in stock</td>
 		</tr>
 			<tr>
-			<td>Lemons</td>
+			<td>Lemons price=0.75</td>
 			<td id='lemonsInStock'>0</td>
 		</tr>
 		<tr>
-			<td>Sugar</td>
+			<td>Sugar price=1.25</td>
 			<td id='sugarInStock'>0</td>
 		</tr>
 		<tr>
-			<td>Ice</td>
+			<td>Ice price=0.25</td>
 			<td id='iceInStock'>0</td>
 		</tr>
 		<tr>
-			<td>cups</td>
+			<td>cups price=0.25</td>
 			<td id='cupsInStock'>0</td>
 		</tr>
 	</table> 
@@ -41,7 +41,23 @@
 			<td>money you have left to spend</td>
 			<td id='money'></td>
 		</tr>
-	</tabe>
+		<tr>
+			<td>Today's Forcast</td>
+			<td id='forcast'></td>
+		</tr>
+	</table>
+	<table border=3 align="center">
+		<tr>
+			<td>cup price for the day</td>
+			<td><input type="button" value="Set cup price" onclick="setLemonadePrice()" /></td>
+			<td id='todayCupPrice'></td>
+
+		</tr>
+	</table>
+	<center>
+	<input type="button" value="start day" onclick="main()" />
+</center>
+
 
 
 	<script src="Lemonadejs.js"></script>
