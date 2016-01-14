@@ -2,7 +2,7 @@
 
 var moneyIHave=20;
 var cupPrice=0;
-var daysLeft=3;
+var daysLeft=6;
 
 document.getElementById('money').innerHTML=moneyIHave;
 randomeWeatherForcast();
@@ -99,15 +99,14 @@ function buyCupsofLemonade(customers)
                 console.log(moneyIHave, cupPrice, "below");
                 lemons.quantity=lemons.quantity-1;
                 console.log(lemons.quantity);
-                document.getElementById('lemonsInStock').innerHtml=lemons.quantity;
-                //console.log('updated lemons in stock=>'+lemons.quantity +'element value =>'+document.getElementById('lemonsInStock').innerHtml)
+                $('#lemonsInStock').html(lemons.quantity);
                 ice.quantity=ice.quantity-1;
-                document.getElementById('iceInStock').innerHtml=ice.quantity;
+                $('#iceInStock').html(ice.quantity);
                 sugar.quantity=sugar.quantity-1;
-                document.getElementById('sugarInStock').innerHtml=sugar.quantity;
+                $('#sugarInStock').html(sugar.quantity);
                 cups.quantity=cups.quantity-1;
-                document.getElementById('cupsInStock').innerHtml=cups.quantity;
-                document.getElementById('money').innerHtml=moneyIHave;
+                $('#cupsInStock').html(cups.quantity);
+                $('#money').html(moneyIHave);
                 console.log("money i have0", moneyIHave);
 
             }
@@ -182,6 +181,7 @@ function buyCups()
 function nextDay()
 {
     ice.quantity=0;
+    $('#iceInStock').html(iceInStock);
     if(daysLeft>0)
     {
         daysLeft--;
